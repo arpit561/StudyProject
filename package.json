@@ -33,11 +33,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arpit561/courseProject.git"
+    "url": "git+https://github.com/arpit561/StudyProject.git"
   },
-  "author": "Pranay Gupta",
+  "author": "Arpit",
   "bugs": {
-    "url": "https://github.com/arpit561/courseProject.git/issues"
+    "url": "https://github.com/arpit561/StudyProject.git/issues"
   },
   "scripts": {
     "start": "react-scripts start",

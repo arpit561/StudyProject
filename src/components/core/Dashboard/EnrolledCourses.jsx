@@ -22,7 +22,7 @@ export default function EnrolledCourses() {
   };
   useEffect(() => {
     getEnrolledCourses();
-  }, [])
+  }, )
 
   return (
     <>

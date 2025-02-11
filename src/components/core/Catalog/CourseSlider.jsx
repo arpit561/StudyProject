@@ -6,7 +6,7 @@ import "swiper/css/free-mode"
 import "swiper/css/pagination"
 import 'swiper/css/autoplay';
 
-import { Autoplay,FreeMode,Navigation, Pagination}  from 'swiper/modules'
+import { Autoplay, Navigation, Pagination}  from 'swiper/modules'
 
 import CourseCard from './CourseCard'
 

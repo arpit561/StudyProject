@@ -36,7 +36,7 @@ const SubSectionModal = ({
             setValue("lectureDesc", modalData.description);
             setValue("lectureVideo", modalData.videoUrl);
         }
-    },[]);
+    },);
 
     const isFormUpdated = () => {
         const currentValues = getValues();

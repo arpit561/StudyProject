@@ -33,7 +33,7 @@ export default function EditProfile() {
         about: user?.additionalDetails?.about || "",
       });
     }
-  }, [user]);
+  }, [user, reset]);
 
   const submitProfileForm = async (data) => {
     console.log("Form Data - ", data)
