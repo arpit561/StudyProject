@@ -20,7 +20,7 @@ const CourseBuilderForm = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    console.log("UPDATED:-->", course);
+    // console.log("UPDATED:-->", course);
   }, [course])
 
 
@@ -40,7 +40,7 @@ const CourseBuilderForm = () => {
       )
     }
     else {
-      console.log("Rendering NestedView:", data?.courseContent);
+      // console.log("Rendering NestedView:", data?.courseContent);
       //we are creating section name
       result = await createSection({
         sectionName: data.sectionName,

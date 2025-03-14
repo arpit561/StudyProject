@@ -13,7 +13,7 @@ import { BsChevronDown } from "react-icons/bs"
 
 
 const Navbar = () => {
-  console.log("Printing base url: ", process.env.REACT_APP_BASE_URL);
+  //console.log("Printing base url: ", process.env.REACT_APP_BASE_URL);
   const { token } = useSelector((state) => state.auth);
   const { user } = useSelector((state) => state.profile);
   const { totalItems } = useSelector((state) => state.cart);
@@ -27,10 +27,10 @@ const Navbar = () => {
         "GET",
         courseEndpoints.COURSE_CATEGORIES_API
       );
-      console.log("Printing Sublinks result:", result);
+      //console.log("Printing Sublinks result:", result);
       setSsubLinks(result.data.data);
     } catch (error) {
-      console.log("Could not fetch the category list");
+      //console.log("Could not fetch the category list");
     }
   };
 

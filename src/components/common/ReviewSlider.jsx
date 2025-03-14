@@ -30,11 +30,11 @@ function ReviewSlider() {
         "GET",
         ratingsEndpoints.REVIEWS_DETAILS_API
       )
-      console.log("Logging response-->", data);
+      // console.log("Logging response-->", data);
       if (data?.success) {
         setReviews(data?.data)
       }
-      console.log("Printing review result-->", reviews)
+      // console.log("Printing review result-->", reviews)
     })()
   }, [reviews])
 

@@ -23,7 +23,7 @@ const NestedView = ({handleChangeEditSectionName}) => {
 
     const [confirmationModal, setConfirmationModal] = useState(null);
     useEffect(() => {
-        console.log("REndering it again");
+        // console.log("REndering it again");
     });
     const handleDeleteSection = async (sectionId) => {
         const result = await deleteSection({
@@ -31,7 +31,7 @@ const NestedView = ({handleChangeEditSectionName}) => {
             courseId: course._id},
             token
         );
-        console.log("PRINTING AFTER DELETE SECTIOn", result);
+        // console.log("PRINTING AFTER DELETE SECTIOn", result);
         if(result) {
             dispatch(setCourse(result))
         }
@@ -41,9 +41,9 @@ const NestedView = ({handleChangeEditSectionName}) => {
 
 
 const handleDeleteSubSection = async (subSectionId, sectionId) => {
-    console.log("Attempting to delete subsection:", { subSectionId, sectionId });
+    // console.log("Attempting to delete subsection:", { subSectionId, sectionId });
     const result = await deleteSubSection({ subSectionId, sectionId }, token);
-    console.log("Delete result:", result);
+    // console.log("Delete result:", result);
     if (result) {
         // Update the course content in the Redux state
         const updatedCourseContent = course.courseContent.map((section) => {
